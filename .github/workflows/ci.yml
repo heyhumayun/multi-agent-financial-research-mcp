@@ -18,7 +18,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: pip
       - run: python -m pip install --upgrade pip
-      - run: python -m pip install -e ".[dev,api]"
+      - run: python -m pip install -e ".[dev,api,market]"
       - run: ruff check src tests
       - run: python -m unittest discover -s tests -v
       - run: FIN_RESEARCH_LIVE=0 financial-research-eval

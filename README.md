@@ -173,7 +173,7 @@ The bundled documents and evaluation cases are Python package data, so they rema
 ## Evaluation and Verification
 
 ```bash
-python3 -m pip install -e ".[dev,api]"
+python3 -m pip install -e ".[dev,api,market]"
 ruff check src tests
 python3 -m unittest discover -s tests -v
 FIN_RESEARCH_LIVE=0 financial-research-eval
