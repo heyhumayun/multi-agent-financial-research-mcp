@@ -1,0 +1,50 @@
+[
+  {
+    "ticker": "NVDA",
+    "published": "2026-08-15",
+    "title": "Cloud capex outlook remains strong as AI infrastructure demand expands",
+    "source": "Sample Markets Daily",
+    "sentiment": 0.72,
+    "url": "offline://sample-news/nvda-cloud-capex"
+  },
+  {
+    "ticker": "NVDA",
+    "published": "2026-08-13",
+    "title": "Export controls remain a constraint for advanced accelerator sales",
+    "source": "Sample Policy Wire",
+    "sentiment": -0.48,
+    "url": "offline://sample-news/nvda-export-controls"
+  },
+  {
+    "ticker": "MSFT",
+    "published": "2026-08-12",
+    "title": "Hyperscaler AI spend supports demand for compute clusters",
+    "source": "Sample Tech Brief",
+    "sentiment": 0.54,
+    "url": "offline://sample-news/msft-ai-spend"
+  },
+  {
+    "ticker": "AMD",
+    "published": "2026-08-10",
+    "title": "Accelerator competition intensifies as customers diversify suppliers",
+    "source": "Sample Semiconductor Monitor",
+    "sentiment": 0.18,
+    "url": "offline://sample-news/amd-competition"
+  },
+  {
+    "ticker": "TSLA",
+    "published": "2026-08-14",
+    "title": "Delivery uncertainty keeps electric vehicle sentiment mixed",
+    "source": "Sample Auto Markets",
+    "sentiment": -0.32,
+    "url": "offline://sample-news/tsla-delivery-risk"
+  },
+  {
+    "ticker": "TSLA",
+    "published": "2026-08-11",
+    "title": "Margin pressure remains a focus as investors track price cuts",
+    "source": "Sample Equity Brief",
+    "sentiment": -0.41,
+    "url": "offline://sample-news/tsla-margin-pressure"
+  }
+]

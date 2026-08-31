@@ -1,0 +1,50 @@
+[project]
+name = "multi-agent-financial-research-mcp"
+version = "0.3.0"
+description = "MCP-first multi-agent financial research system for market, news, paper, document, and risk analysis."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0",
+    "requests>=2.31.0",
+    "certifi>=2023.7.22",
+    "typing-extensions>=4.0.0",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.optional-dependencies]
+market = ["yfinance>=0.2.40"]
+api = ["fastapi>=0.110.0", "uvicorn>=0.27.0"]
+ui = ["streamlit>=1.30.0"]
+rag = ["sentence-transformers>=3.0.0", "faiss-cpu>=1.8.0"]
+dev = ["pytest>=8.0.0", "ruff>=0.6.0"]
+
+[project.scripts]
+financial-research-agent = "financial_research_agent.cli:main"
+financial-research-mcp = "financial_research_agent.mcp.server:main"
+financial-research-api = "financial_research_agent.api:main"
+financial-research-ui = "financial_research_agent.ui:launch"
+financial-research-eval = "financial_research_agent.benchmark:main"
+
+[build-system]
+requires = ["setuptools>=68.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+financial_research_agent = ["data/**/*.json", "data/**/*.md"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
