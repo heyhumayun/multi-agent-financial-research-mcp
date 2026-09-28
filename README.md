@@ -105,5 +105,3 @@ python3 -m unittest discover -s tests -v
 - [Evaluation methodology and results](EVALUATION.md)
 - [Product-readiness assessment](PRODUCT_READINESS.md)
 - [MIT license](LICENSE)
-
-Maintainer: [heyhumayun](https://github.com/heyhumayun).
